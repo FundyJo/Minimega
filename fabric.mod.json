@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "minimega",
+  "version": "6.5.32",
+  "name": "Minimega",
+  "description": "LCE Minigames ported to Java Edition!",
+  "authors": [
+    "Jab125"
+  ],
+  "contributors": [
+    "Creepereater201",
+    "BrandonItaly",
+    "Kryzor",
+    "Jamiscus",
+    "WilyIcaro",
+    "S-N00B-1",
+    "PhoenixARC",
+    "Bagieta",
+    "GRAnimated",
+    "MayNL",
+    "Pirlo",
+    "Technocality",
+    "Ahsumcrafter",
+    "JacksTheGreat",
+    "NicSonic",
+    "TripTEM"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/minimega"
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/minimega/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.jab125.minimega.mod.Minimega"
+    ],
+    "client": [
+      "dev.jab125.minimega.mod.client.MinimegaClient::onInitializeClient"
+    ],
+    "modmenu": [
+      "dev.jab125.minimega.mod.client.compat.ModMenuCompat"
+    ],
+    "controlify": [
+      "dev.jab125.minimega.mod.client.compat.controlify.MinimegaControlifyEntrypoint"
+    ]
+  },
+  "mixins": [
+    "minimega.mixins.json",
+    "minimega.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "\u003e\u003d0.19.1",
+    "minecraft": "~26.1",
+    "java": "\u003e\u003d25",
+    "fabric-api": "\u003e\u003d0.145.4",
+    "fantasy": "\u003e\u003d0.6.5"
+  },
+  "breaks": {
+    "ok_zoomer": "\u003c16.0.0-beta.2",
+    "e4mc": "\u003c6.1.0"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/activation-1.1.1.jar"
+    },
+    {
+      "file": "META-INF/jars/exificient-1.0.7.jar"
+    },
+    {
+      "file": "META-INF/jars/exificient-core-1.0.7.jar"
+    },
+    {
+      "file": "META-INF/jars/exificient-grammars-1.0.7.jar"
+    },
+    {
+      "file": "META-INF/jars/fantasy-0.8.0+26.1.2.jar"
+    },
+    {
+      "file": "META-INF/jars/map-templates-0.3.0+26.1.jar"
+    },
+    {
+      "file": "META-INF/jars/xmlpull-1.1.3.1.jar"
+    },
+    {
+      "file": "META-INF/jars/minimega-6.5.32-1.9-legacy4j.jar"
+    }
+  ]
+}
